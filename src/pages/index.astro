@@ -1,5 +1,6 @@
 ---
-
+import '../styles/global.css';
+import Card from '../components/Card';
 ---
 
 <html lang="en">
@@ -9,9 +10,21 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Astro + React + Tailwind</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="min-h-screen bg-slate-50 py-12">
+		<main class="mx-auto max-w-2xl px-4">
+			<h1 class="mb-8 text-3xl font-bold text-slate-900">
+				Astro + React + Tailwind + TypeScript
+			</h1>
+			<div class="grid gap-6 sm:grid-cols-2">
+				<Card title="Astro">
+					Content-first web framework. Build faster with less client-side JavaScript.
+				</Card>
+				<Card title="React">
+					Interactive UI components run as islands with Astro's islands architecture.
+				</Card>
+			</div>
+		</main>
 	</body>
 </html>
