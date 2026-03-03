@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# large media assets (use CDN or Git LFS in production)
+public/assets/pill.webm
